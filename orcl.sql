@@ -1,34 +1,34 @@
--- 1. 오라클 DB 다운로드 https://www.oracle.com/database/technologies/oracle19c-windows-downloads.html
--- 2. SQL Developer 다운로드 https://www.oracle.com/database/sqldeveloper/technologies/download/
--- 3. Window + R 키 → cmd 클릭
-   C:\Users\Gaeun Baek> sqlplus
-
-   사용자명 입력: sys as sysdba
-   비밀번호 입력: 엔터키만 누르기
-
-   SQL> show user
-   USER은 "SYS"입니다
-   
-   SQL> alter user sys identified by 1234;
-   사용자가 변경되었습니다.
-
-   SQL> conn sys/1234 as sysdba;
-   연결되었습니다.
-   
-   SQL> create user scott
-     2  identified by tiger;
-   사용자가 생성되었습니다.
-
-   SQL> grant dba to scott;
-   권한이 부여되었습니다.
-   SQL> connect scott/tiger
-   연결되었습니다.
-   
-   SQL> show user
-   USER은 "SCOTT"입니다
-   SQL>
-
---초보자를 위한 SQL 200제 스크립트 https://cafe.daum.net/oracleoracle/Sdyr/846 파일 다운로드 후 “SQL200제_실습스크립트.txt” 본문 복사 → SQL Developer에 붙여넣기 → F5 키로 실행
+> -- 1. 오라클 DB 다운로드 https://www.oracle.com/database/technologies/oracle19c-windows-downloads.html
+> -- 2. SQL Developer 다운로드 https://www.oracle.com/database/sqldeveloper/technologies/download/
+> -- 3. Window + R 키 → cmd 클릭
+    C:\Users\Gaeun Baek> sqlplus
+    
+    사용자명 입력: sys as sysdba
+    비밀번호 입력: 엔터키만 누르기
+    
+    SQL> show user
+    USER은 "SYS"입니다
+    
+    SQL> alter user sys identified by 1234;
+    사용자가 변경되었습니다.
+    
+    SQL> conn sys/1234 as sysdba;
+    연결되었습니다.
+    
+    SQL> create user scott
+      2  identified by tiger;
+    사용자가 생성되었습니다.
+    
+    SQL> grant dba to scott;
+    권한이 부여되었습니다.
+    SQL> connect scott/tiger
+    연결되었습니다.
+    
+    SQL> show user
+    USER은 "SCOTT"입니다
+    SQL>
+    
+> --초보자를 위한 SQL 200제 스크립트 https://cafe.daum.net/oracleoracle/Sdyr/846 파일 다운로드 후 “SQL200제_실습스크립트.txt” 본문 복사 → SQL Developer에 붙여넣기 → F5 키로 실행
    alter session set nls_date_format='RR/MM/DD';
    
    drop table emp;
@@ -86,7 +86,7 @@
    
    commit;
 
---PART 1 START
+> --PART 1 START
     select * from emp;
 
     //001.테이블에서 특정 열 선택하기
